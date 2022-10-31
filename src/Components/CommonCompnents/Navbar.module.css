@@ -1,0 +1,167 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  color: #1f2960;
+  width: 100%;
+  text-decoration: none;
+}
+.nav img {
+  margin: 0.5rem;
+  margin-left: 3vh;
+}
+.pages {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+.button {
+  width: 138px;
+  height: 44px;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  margin-left: 2rem;
+  margin: 9px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1f2960;
+  background-color: inherit;
+  cursor: pointer;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* .services {
+  background-color: #040008;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+}
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+}
+.menu-content {
+  display: none;
+  position: absolute;
+  background-color: #017575;
+  min-width: 160px;
+  z-index: 1;
+}
+nav {
+  background-color: #017575;
+}
+.links,
+.links-hidden {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.links-hidden {
+  display: block;
+}
+.links {
+  display: inline-block;
+}
+.links-hidden:hover,
+.links:hover {
+  background-color: rgb(8, 107, 46);
+}
+.dropdown-menu:hover .menu-content {
+  display: block;
+}
+.dropdown-menu:hover .menu-btn {
+  background-color: #3e8e41;
+} */
+.s {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  color: black;
+  background-color: rgb(211, 211, 203);
+  width: 17rem;
+}
+.s div {
+  margin-left: 0.3rem;
+  padding: 1rem 0 1rem 0;
+  height: 2rem;
+  cursor: pointer;
+}
+.s div:hover {
+  background-color: rgb(200, 200, 188);
+}
+.pages div {
+  text-decoration: none;
+  color: #1f2960;
+}
+.pages div :link {
+  text-decoration: none;
+  color: #1f2960;
+}

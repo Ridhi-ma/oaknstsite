@@ -1,0 +1,39 @@
+.read img {
+  width: 60rem;
+  height: 35rem;
+
+  margin-top: 2rem;
+
+  border-color: blueviolet;
+}
+.head h1 {
+  text-align: center;
+}
+.head h2 {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.read p {
+  margin-top: 1rem;
+  font-family: "Lato";
+  font-size: 25px;
+  text-align: justify;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.i {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+.i img {
+  margin-right: 1rem;
+}
+.head {
+  background-color: bisque;
+  width: 60rem;
+  margin-left: 8rem;
+}
