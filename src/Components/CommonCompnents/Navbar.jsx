@@ -32,11 +32,11 @@ const Navbar = () => {
       <img src="/assets/logo.png" />
       <div className={classes.pages}>
         <Link to="/">
-          <Navbutton text="Home" />
+          <Navbutton text="Home " />
         </Link>
 
         <div>
-          <Navbutton text="Services" onHandle={display} />
+          <Navbutton text="Services ▾" onHandle={display} />
           {show && (
             <div className={classes.s}>
               <div>Product Development</div>
@@ -51,10 +51,11 @@ const Navbar = () => {
 
         <Navbutton text="Product" />
         <Navbutton text="CSR" />
-        <Navbutton text="Contact" />
-
+        <Link to="/Contact">
+          <Navbutton text="Contact" />
+        </Link>
         <div>
-          <Navbutton text="Resources" onHandle={display2} />
+          <Navbutton text="Resources ▾" onHandle={display2} />
           {shower && (
             <div className={classes.s}>
               <Link to="/blogs">

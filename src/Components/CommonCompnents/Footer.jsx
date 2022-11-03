@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Footer.module.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className={classes.footer}>
@@ -15,7 +16,9 @@ const Footer = () => {
         <h3>Company</h3>
         <p>About Us</p>
         <p>Contact</p>
-        <p>Private Policy</p>
+        <Link to="/Privacy">
+          <p>Privacy Policy</p>
+        </Link>
         <div>
           <img src="/assets/linkedin.png"></img>
           <img src="/assets/twitter.png"></img>

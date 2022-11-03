@@ -88,3 +88,12 @@
   max-width: 30rem;
   width: 100%;
 }
+.solution h3 {
+  font-family: "Lato";
+}
+.what input[type="input"]::-webkit-input-placeholder {
+  margin-left: 1rem;
+}
+.what input[type="text"] {
+  padding-left: 1rem;
+}
