@@ -1,8 +1,56 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import classes from "./Contact.module.css";
 import Navbar from "../CommonCompnents/Navbar";
 import Footer from "../CommonCompnents/Footer";
+
 const Contact = () => {
+  const nameto = useRef();
+  const emailto = useRef();
+  const mobileto = useRef();
+  const tickto = useRef();
+  const [radio, setradio] = useState(false);
+  const [fname, setfname] = useState(false);
+  const [email, setemail] = useState(false);
+  const [mobile, setmobile] = useState(false);
+  const [tick, settick] = useState(false);
+
+  const onsubmit = (e) => {
+    e.preventDefault();
+    if (nameto.current.value == "") {
+      setfname(true);
+    }
+    if (!nameto.current.value == "") {
+      setfname(false);
+    }
+
+    if (
+      emailto.current.value == "" ||
+      !emailto.current.value.includes("@") ||
+      emailto.current.value.length < 6
+    ) {
+      setemail(true);
+    }
+    if (
+      !emailto.current.value == "" &&
+      emailto.current.value.includes("@") &&
+      !emailto.current.value.length < 6
+    ) {
+      setemail(false);
+    }
+
+    if (mobileto.current.value == "" || mobileto.current.value.length < 10) {
+      setmobile(true);
+    }
+    if (
+      !mobileto.current.value == "" &&
+      (mobileto.current.value.length > 9) & 13
+    ) {
+      setmobile(false);
+    }
+    if (tickto.current.value == 1) {
+      settick(true);
+    }
+  };
   return (
     <React.Fragment>
       <Navbar />
@@ -15,35 +63,95 @@ const Contact = () => {
         <img src="/assets/Line 6.png"></img>
       </div>
       <div className={classes.container}>
-        <div className={classes.data}>
-          <div>
-            <h2>First Name *</h2>
-            <input type="text" />
-          </div>
-          <div>
-            <h2>Last Name</h2>
-            <input type="text" />
-          </div>
-          <div>
-            <h2>Email *</h2>
-            <input type="text" />
-          </div>
-          <div>
-            <h2>Mobile *</h2>
-            <input type="text" />
-          </div>
-          <h3>What type of services you want? Select below.</h3>
-          <div className={classes.radio}>
-            <h2>place</h2>
-            <input type="radio" />
-          </div>
-          <h3>All fields marked with an asterisk (*) are mandatory.</h3>
-          <div className={classes.meg}>
-            <h3>Message </h3>
-            <input type="text" placeholder="Write your message..." />
-            <h4>I agree to the Privacy Policy and Other T&C.</h4>
-            <button>Send Message</button>
-          </div>
+        <div className={classes.right}>
+          <form onSubmit={onsubmit}>
+            <div className={classes.data}>
+              <div>
+                <h2>
+                  First Name{" "}
+                  <span>
+                    <img src="/assets/Vector (5).png" />
+                  </span>
+                </h2>
+                <input
+                  type="text"
+                  ref={nameto}
+                  className={fname === true ? classes.invalid : ""}
+                />
+              </div>
+              <div>
+                <h2>Last Name</h2>
+                <input type="text" />
+              </div>
+              <div>
+                <h2>
+                  Email{" "}
+                  <span>
+                    <img src="/assets/Vector (5).png" />
+                  </span>
+                </h2>
+                <input
+                  type="text"
+                  ref={emailto}
+                  className={email === true ? classes.invalid : ""}
+                />
+              </div>
+              <div>
+                <h2>
+                  Mobile{" "}
+                  <span>
+                    <img src="/assets/Vector (5).png" />
+                  </span>
+                </h2>
+                <input
+                  type="number"
+                  ref={mobileto}
+                  className={mobile === true ? classes.invalid : ""}
+                />
+              </div>
+            </div>
+            <div className={classes.type}>
+              <h1>What type of services you want? Select below.</h1>
+              <div className={classes.radio}>
+                <div>
+                  <input type="radio" onChange={() => setradio(!radio)} />
+                  <h3>Product Development</h3>
+                </div>
+                <div>
+                  <input type="radio" />
+                  <h3>Operations Transformation</h3>
+                </div>
+                <div>
+                  <input type="radio" />
+                  <h3>Other Services </h3>
+                </div>
+                <div>
+                  <input type="radio" />
+                  <h3>Cloud Transformation</h3>
+                </div>
+                <div>
+                  <input type="radio" />
+                  <h3>Analytics</h3>
+                </div>
+              </div>
+              <h2>
+                All fields marked with an asterisk (
+                <span>
+                  <img src="/assets/Vector (5).png" />
+                </span>
+                ) are mandatory.
+              </h2>
+              <div className={classes.meg}>
+                <h1>Message </h1>
+                <input type="text" placeholder="Write your message..." />
+                <div className={classes.l}>
+                  <input type="checkbox" ref={tickto} />
+                  <h3>I agree to the Privacy Policy and Other T&C.</h3>
+                </div>
+                <button>Send Message</button>
+              </div>
+            </div>
+          </form>
         </div>
         <div className={classes.abox}>
           <h3>How to Find Us!</h3>
@@ -62,6 +170,18 @@ const Contact = () => {
               <br /> Course Road
             </h3>
           </div>
+          <div className={classes.images}>
+            <div>
+              <img src="/assets/Vector (2).png" />
+            </div>
+            <div>
+              <img src="/assets/Vector (3).png" />
+            </div>
+            <div>
+              <img src="/assets/twitter.png" />
+            </div>
+          </div>
+          <img src="/assets/Pattern1.png" />
         </div>
       </div>
       <Footer />

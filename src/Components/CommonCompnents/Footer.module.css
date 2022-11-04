@@ -97,3 +97,6 @@
 .what input[type="text"] {
   padding-left: 1rem;
 }
+.invalid {
+  background-color: #e4842d;
+}
