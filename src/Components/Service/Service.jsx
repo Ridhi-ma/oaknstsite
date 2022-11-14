@@ -3,6 +3,7 @@ import Navbar from "../CommonCompnents/Navbar";
 import classes from "./Service.module.css";
 import Footer from "../CommonCompnents/Footer";
 import Where from "./Where";
+import Ourservice from "./Ourservice";
 import Benefits from "./Benfits";
 
 // importing Link from react-router-dom to navigate to
@@ -13,7 +14,7 @@ const Service = () => {
     <React.Fragment>
       <Navbar />
       <div className={classes.top}>
-        <div>
+        <div className={classes.topcontent}>
           <h2>Cloud Transformation</h2>
           <p>
             Unlock great business value and opportunities
@@ -22,7 +23,9 @@ const Service = () => {
           </p>
           <button>Get In Touch</button>
         </div>
-        <img src="./assets/SERVICE MAIN.png"></img>
+        <div className={classes.topimage}>
+          <img src="./assets/SERVICE MAIN.png" />
+        </div>
       </div>
       <div className={classes.main}>
         <p>
@@ -35,7 +38,7 @@ const Service = () => {
       </div>
       <div className={classes.benefits}>
         <h2>Benefits</h2>
-        <img src="./assets/Line 5.png"></img>
+        {/* <img src="./assets/Line 5.png"></img> */}
         <div className={classes.benifts}>
           <Benefits
             photo={"3arrow.png"}
@@ -51,7 +54,7 @@ const Service = () => {
             photo="lock.png"
             head="Security"
             body="You can take advantage of cloud security technologies such as data encryption and two-factor authentication for greater privacy than you would have when relying on your equipment or servers.
- "
+     "
           />
           <Benefits
             photo="share.png"
@@ -68,7 +71,7 @@ const Service = () => {
             photo="recycle.png"
             head="Disaster Recovery"
             body="We ensure that your data backups are centralized in data centers, removing the need for individual users or teams to maintain their backups onsite or offsite. It lowers the risk of data loss should any backup fail or be destroyed by a disaster.
-"
+    "
           />
           <Benefits
             photo="piggybank.png"
@@ -84,10 +87,34 @@ const Service = () => {
       </div>
       <div className={classes.services}>
         <h1>Our Services</h1>
-        <img src="./assets/Line 5.png"></img>
+        {/* <img src="./assets/Line 5.png"></img> */}
       </div>
       <div className={classes.boxes}>
-        <div>
+        <Ourservice
+          heading={"Cloud Strategy"}
+          content={
+            "We partner with you to help build your cloud strategy basis your needs. We start with a diagnostic assessment of your systems and business requirements and then present you with a bouquet of options that can help you achieve scale with the lowest upfront investment."
+          }
+        />
+        <Ourservice
+          heading={"Cloud Migration"}
+          content={
+            "We partner with you to help build your cloud strategy basis your needs. We start with a diagnostic assessment of your systems and business requirements and then present you with a bouquet of options that can help you achieve scale with the lowest upfront investment."
+          }
+        />
+        <Ourservice
+          heading={"Cloud App Development"}
+          content={
+            "We partner with you to help build your cloud strategy basis your needs. We start with a diagnostic assessment of your systems and business requirements and then present you with a bouquet of options that can help you achieve scale with the lowest upfront investment."
+          }
+        />
+        <Ourservice
+          heading={"Cloud Security & Risk"}
+          content={
+            " Our security specialists build custom security integration solutions to secure your data and critical business. We provide a comprehensive security strategy to monitor and detect threats. Our deployment solutions take care of your security concerns – from data protection to risk assessment to security monitoring."
+          }
+        />
+        {/* <div>
           <h1>Cloud Strategy</h1>
           <p>
             We partner with you to help build your cloud strategy basis your
@@ -123,19 +150,19 @@ const Service = () => {
             deployment solutions take care of your security concerns – from data
             protection to risk assessment to security monitoring.
           </p>
-        </div>
+        </div> */}
       </div>
-      <div className={classes.whole}>
-        <div className={classes.bottom}>
-          <h2>Who We Serve</h2>
-          <img src="/assets/Line 5.png" />
-        </div>
-        <div className={classes.bott}>
-          <Where head="Young Organizations" />
-          <Where head="Small & Mid-Size Organizations" />
-          <Where head="Family-Owned Businesses" />
-        </div>
-      </div>
+      {/* <div className={classes.whole}>
+            <div className={classes.bottom}>
+              <h2>Who We Serve</h2>
+              <img src="/assets/Line 5.png" />
+            </div>
+            <div className={classes.bott}>
+              <Where head="Young Organizations" />
+              <Where head="Small & Mid-Size Organizations" />
+              <Where head="Family-Owned Businesses" />
+            </div>
+          </div> */}
       <Footer />
     </React.Fragment>
   );

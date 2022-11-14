@@ -29,7 +29,9 @@ const Navbar = () => {
   };
   return (
     <div className={classes.nav}>
-      <img src="/assets/logo.png" />
+      <div className={classes.ph}>
+        <img src="/assets/logo.png" />
+      </div>
       <div className={classes.pages}>
         <Link to="/">
           <Navbutton text="Home " />
@@ -48,9 +50,14 @@ const Navbar = () => {
             </div>
           )}
         </div>
+        <Link to="/Contact">
+          <Navbutton text="Product" />
+        </Link>
 
-        <Navbutton text="Product" />
-        <Navbutton text="CSR" />
+        <Link to="/Contact">
+          <Navbutton text="CSR" />
+        </Link>
+
         <Link to="/Contact">
           <Navbutton text="Contact" />
         </Link>
@@ -66,10 +73,10 @@ const Navbar = () => {
           )}
         </div>
       </div>
-      <div>
+      {/* <div className={classes.k}>
         <img src="/assets/linkedin.png" />
         <img src="/assets/twitter.png" />
-      </div>
+      </div> */}
     </div>
   );
 };

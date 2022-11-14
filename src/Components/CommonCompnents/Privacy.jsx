@@ -8,7 +8,6 @@ const Privacy = () => {
       <Navbar />
       <div className={classes.head}>
         <h1>Privacy Policy</h1>
-        <img src="/assets/Line 6.png"></img>
       </div>
       <div className={classes.para}>
         <p>
@@ -140,13 +139,13 @@ const Privacy = () => {
           but remember that no method of transmission over the Internet, or
           method of electronic storage is 100% secure. While we strive to use
           commercially acceptable means to protect your Personal Data, we cannot
-          guarantee its absolute security. <h3>Service Providers </h3>We may
-          employ third party companies and individuals to facilitate our Service
-          (“Service Providers”), to provide the Service on our behalf, to
-          perform Service-related services or to assist us in analyzing how our
-          Service is used. These third parties have access to your Personal Data
-          only to perform these tasks on our behalf and are obligated not to
-          disclose or use it for any other purpose. <h3>Analytics</h3>
+          guarantee its absolute security. <h3>Service Providers </h3>
+          We may employ third party companies and individuals to facilitate our
+          Service (“Service Providers”), to provide the Service on our behalf,
+          to perform Service-related services or to assist us in analyzing how
+          our Service is used. These third parties have access to your Personal
+          Data only to perform these tasks on our behalf and are obligated not
+          to disclose or use it for any other purpose. <h3>Analytics</h3>
           We may use third-party Service Providers to monitor and analyze the
           use of our Service. <h3>Google Analytics </h3>
           <p>

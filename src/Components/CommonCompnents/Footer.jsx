@@ -1,8 +1,9 @@
 import React from "react";
 import { useRef, useState } from "react";
 import classes from "./Footer.module.css";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 const Footer = () => {
+  let navigate = useNavigate();
   const inputo = useRef();
   const emailto = useRef();
   const [invalid, setInvalid] = useState(false);
@@ -41,42 +42,75 @@ const Footer = () => {
       console.log("hello");
     }
   };
+  const homehandler = () => {
+    window.scroll(0, 0);
+    navigate("/");
+  };
+  const servicehandler = () => {
+    window.scroll(0, 0);
+    navigate("/Services");
+  };
+  const contacthandler = () => {
+    window.scroll(0, 0);
+    navigate("/contact");
+  };
   return (
-    <div className={classes.footer}>
-      <img src="/assets/logo.png" />
-      <div className={classes.solution}>
-        <h3>Services</h3>
-        <p>Product Development</p>
-        <p>Cloud Transformation</p>
-        <p>Operations Transformation</p>
-        <p>Analytics</p>
-      </div>
-      <div className={classes.solution}>
-        <h3>Company</h3>
-        <p>About Us</p>
-        <Link to="/Contact">
-          <p>Contact</p>
-        </Link>
-        <Link to="/Privacy">
-          <p>Privacy Policy</p>
-        </Link>
-        <div>
-          <img src="/assets/linkedin.png"></img>
-          <img src="/assets/twitter.png"></img>
+    <React.Fragment>
+      <div className={classes.footer}>
+        <img src="/assets/logo.png" />
+        <div className={classes.solution}>
+          <h3>Services</h3>
+          <p>Product Development</p>
+          <p>Cloud Transformation</p>
+          <p>Operations Transformation</p>
+          <p>Analytics</p>
+        </div>
+        <div className={classes.solution}>
+          <h3>Company</h3>
+          <p>About Us</p>
+          <Link to="/Contact">
+            <p>Contact</p>
+          </Link>
+          <Link to="/Privacy">
+            <p>Privacy Policy</p>
+          </Link>
+          <div>
+            <img src="/assets/linkedin.png"></img>
+            <img src="/assets/twitter.png"></img>
+          </div>
+        </div>
+        <div className={classes.what}>
+          <h4>Want to get in touch with us?</h4>
+          <form onSubmit={formHandler}>
+            <input type="text" placeholder="Name" ref={inputo} />
+            <input type="text" placeholder="Company Email" ref={emailto} />
+            {invalid && (
+              <label style={{ color: "red" }}>Enter correct email id</label>
+            )}
+            <button>Enter</button>
+          </form>
         </div>
       </div>
-      <div className={classes.what}>
-        <h4>Want to get in touch with us?</h4>
-        <form onSubmit={formHandler}>
-          <input type="text" placeholder="Name" ref={inputo} />
-          <input type="text" placeholder="Company Email" ref={emailto} />
-          {invalid && (
-            <label style={{ color: "red" }}>Enter correct email id</label>
-          )}
-          <button>Enter</button>
-        </form>
+      <div className={classes.mobile}>
+        <div>
+          <img src="/assets/home.png" onClick={homehandler} />
+          <p onClick={homehandler}>Products</p>
+        </div>
+        <div>
+          <img src="/assets/package.png" onClick={servicehandler} />
+          <p onClick={servicehandler}>Service</p>
+        </div>
+        <div>
+          <img src="/assets/news.png" />
+          <p>News</p>
+        </div>
+
+        <div>
+          <img src="/assets/support.png" onClick={contacthandler} />
+          <p onClick={contacthandler}>Contact us</p>
+        </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 export default Footer;

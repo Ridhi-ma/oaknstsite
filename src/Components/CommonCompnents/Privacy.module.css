@@ -5,6 +5,8 @@
 .head {
   background-image: url("/public/assets/bluebox.png");
   height: 20rem;
+  width: 100%;
+  background-size: cover;
 }
 .head h1 {
   color: white;
@@ -15,6 +17,7 @@
   font-weight: 800;
   font-size: 50px;
   line-height: 60px;
+  border-bottom: 1px solid white;
 }
 .para {
   margin-right: 1rem;
@@ -31,4 +34,15 @@
 }
 .para ul {
   margin-left: 2rem;
+}
+
+@media only screen and (max-width: 56.25rem) {
+  * {
+    margin: 0;
+  }
+  .head {
+    background-image: url("/public/assets/bluebox.png");
+    height: 20rem;
+    width: 100%;
+  }
 }

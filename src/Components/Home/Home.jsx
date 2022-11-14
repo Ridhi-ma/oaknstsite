@@ -3,6 +3,7 @@ import classes from "./Home.module.css";
 import Footer from "../CommonCompnents/Footer";
 import Homebox from "./Homebox";
 import Navbar from "../CommonCompnents/Navbar";
+<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>;
 const Home = () => {
   return (
     <React.Fragment>
@@ -14,9 +15,7 @@ const Home = () => {
             <p className={classes.text}>Achieve your ambition</p>
             <button className={classes.button}>Get In Touch</button>
           </div>
-          <div className={classes.imgmain}>
-            <img src="/assets/mainimg.png" />
-          </div>
+          <div className={classes.imgmain}></div>
         </div>
       </div>
       <div className={classes.dos}>

@@ -2,25 +2,29 @@
   display: flex;
   flex-direction: row;
   color: #1f2960;
+  min-width: 10rem;
   width: 100%;
-  text-decoration: none;
 }
-.nav img {
+.ph img {
   margin: 0.5rem;
   margin-left: 3vh;
 }
 .pages {
   display: flex;
   flex-direction: row;
-  margin-left: 8rem;
+  margin-right: 2rem;
+  justify-content: flex-end;
+  /* margin-left: 33rem; */
+  width: 100%;
 }
 .button {
-  width: 138px;
-  height: 44px;
+  max-width: 9rem;
+
+  width: 100%;
+  height: 2.75rem;
   outline: none;
   border: none;
   border-radius: 10px;
-  /* margin-left: 2rem; */
   margin: 9px;
   font-family: "Lato";
   font-style: normal;
@@ -30,6 +34,7 @@
   color: #1f2960;
   background-color: inherit;
   cursor: pointer;
+  margin-left: 2rem;
 }
 .navbar {
   overflow: hidden;
@@ -164,4 +169,90 @@ nav {
 .pages div :link {
   text-decoration: none;
   color: #1f2960;
+}
+.k {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+  margin-top: 0.2rem;
+}
+.k img {
+  width: 2rem;
+  height: 2rem;
+}
+.ph {
+  width: 9rem;
+  height: 4rem;
+}
+.btn {
+  display: none;
+}
+@media only screen and (max-width: 56.25rem) {
+  * {
+    margin: 0;
+  }
+  .pages {
+    display: none;
+    background-color: gray;
+    min-height: 56.25rem;
+  }
+  .k {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.k {
+  width: 1rem;
+  height: 1rem;
+  display: none;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+.k img {
+  width: 1rem;
+  height: 1rem;
+}
+.ph {
+  width: 7rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+.ph img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 930px) {
+  .pages {
+    margin-left: 2rem;
+  }
+  .button {
+    max-width: 9rem;
+
+    width: 80%;
+    height: 2rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    margin: 9px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1f2960;
+    background-color: inherit;
+    cursor: pointer;
+    margin-left: 2rem;
+  }
+  .ph {
+    width: 7rem;
+    height: 2rem;
+  }
+  .ph img {
+    width: 100%;
+    height: 100%;
+  }
 }

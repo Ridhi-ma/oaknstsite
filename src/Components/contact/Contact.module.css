@@ -4,6 +4,7 @@
   font-style: "Lato";
   height: 27rem;
   background-repeat: no-repeat;
+  width: 92rem;
 }
 .head h1 {
   position: absolute;
@@ -91,10 +92,10 @@
 }
 
 .abox {
-  background: #656565;
-  width: 40rem;
+  /* background: #656565; */
+  /* width: 40rem; */
   height: 73rem;
-  color: #fefefe;
+  color: hsl(0, 6%, 7%);
   padding-left: 2rem;
 }
 .abox h3 {
@@ -190,10 +191,12 @@
   margin-left: 1rem;
 }
 .abox {
-  background-image: url("/public/assets/Pattern\ v\ 2.png");
+  /* background-image: url("/public/assets/Pattern\ v\ 2.png"); */
   background-repeat: no-repeat;
   margin: 0;
   background-size: contain;
+  width: 100rem;
+  margin-left: 3rem;
 }
 .invalid {
   background-color: #f58787;
@@ -217,4 +220,51 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+.whole {
+  height: 100%;
+}
+@media only screen and (max-width: 56.25rem) {
+  * {
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-width: 40rem;
+    width: 100%;
+    min-height: 15.625rem;
+    height: 100%;
+    padding-top: 2rem;
+  }
+  .head {
+    background-image: url("/public/assets/rear-view-businessman-talking-phone-city.png");
+    color: white;
+    font-style: "Lato";
+    height: 27rem;
+    background-repeat: no-repeat;
+    min-width: 40rem;
+    width: 100%;
+  }
+  .abox {
+    /* background: #656565; */
+
+    height: 73rem;
+    color: #030303;
+    /* padding-left: 2rem; */
+  }
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+  /* .meg button {
+    display: flex;
+    flex-direction: column;
+    /* width: 10rem;
+    height: 3rem; */
+  /* border-radius: 0.5rem;
+    color: white;
+    background-color: #194f7e; */
+
+  /* margin-right: 1rem; */
 }
