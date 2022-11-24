@@ -1,14 +1,14 @@
 .head {
-  background-image: url("/public/assets/rear-view-businessman-talking-phone-city.png");
-  color: white;
+  /* background-image: url("/public/assets/rear-view-businessman-talking-phone-city.png");
+  color: white; */
   font-style: "Lato";
   height: 27rem;
   background-repeat: no-repeat;
-  width: 92rem;
+  /* width: 92rem; */
 }
 .head h1 {
   position: absolute;
-  width: 291px;
+  /* width: 291px; */
   height: 60px;
   font-family: "Lato";
   font-style: normal;
@@ -190,14 +190,6 @@
 .l h3 {
   margin-left: 1rem;
 }
-.abox {
-  /* background-image: url("/public/assets/Pattern\ v\ 2.png"); */
-  background-repeat: no-repeat;
-  margin: 0;
-  background-size: contain;
-  width: 100rem;
-  margin-left: 3rem;
-}
 .invalid {
   background-color: #f58787;
 }
@@ -227,6 +219,11 @@
 @media only screen and (max-width: 56.25rem) {
   * {
     margin: 0;
+    max-width: 100%;
+  }
+  .radio {
+    display: flex;
+    flex-direction: row;
   }
   .container {
     display: flex;
@@ -238,7 +235,6 @@
     padding-top: 2rem;
   }
   .head {
-    background-image: url("/public/assets/rear-view-businessman-talking-phone-city.png");
     color: white;
     font-style: "Lato";
     height: 27rem;
@@ -248,8 +244,7 @@
   }
   .abox {
     /* background: #656565; */
-
-    height: 73rem;
+    height: 40rem;
     color: #030303;
     /* padding-left: 2rem; */
   }
@@ -257,6 +252,14 @@
     display: flex;
     flex-direction: column;
   }
+  .btn-button {
+    position: relative;
+    margin-right: 9rem;
+  }
+  .li {
+    margin-top: 13rem;
+  }
+
   /* .meg button {
     display: flex;
     flex-direction: column;
@@ -267,4 +270,35 @@
     background-color: #194f7e; */
 
   /* margin-right: 1rem; */
+}
+@media only screen and (max-width: 56.25rem) {
+  * {
+    margin: 0;
+  }
+  .abox {
+    display: flex;
+    flex-direction: column;
+  }
+  .images {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .meg-button {
+    position: relative;
+    margin-right: 9rem;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  * {
+    margin: 0;
+  }
+  .abox {
+    display: flex;
+    flex-direction: column;
+  }
+  .radio {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+  }
 }

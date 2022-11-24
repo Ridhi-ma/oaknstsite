@@ -149,7 +149,10 @@ const Contact = () => {
                     <input type="checkbox" ref={tickto} />
                     <h3>I agree to the Privacy Policy and Other T&C.</h3>
                   </div>
-                  <button>Send Message</button>
+
+                  {/* <div className={classes.btn}>
+                    <button>Send Message</button>
+                  </div> */}
                 </div>
               </div>
             </form>
@@ -171,7 +174,7 @@ const Contact = () => {
                 <br /> Course Road
               </h3>
             </div>
-            {/* <div className={classes.images}>
+            <div className={classes.images}>
               <div>
                 <img src="/assets/Vector (2).png" />
               </div>
@@ -181,8 +184,7 @@ const Contact = () => {
               <div>
                 <img src="/assets/twitter.png" />
               </div>
-            </div> */}
-            {/* <img src="/assets/Pattern1.png" /> */}
+            </div>
           </div>
         </div>
         <Footer />
