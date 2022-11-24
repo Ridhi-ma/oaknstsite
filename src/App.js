@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router-dom";
 import Blogmainpage from "./Components/Blog/Blogmainpage";
 import Privacy from "./Components/CommonCompnents/Privacy";
 import Contact from "./Components/contact/Contact";
+import Operations from "./Components/Operations/Operations";
 function App() {
   return (
     <Routes>
@@ -15,6 +16,7 @@ function App() {
       <Route path="/blogcontents" element={<Blogmainpage />} />
       <Route path="/Privacy" element={<Privacy />} />
       <Route path="/Contact" element={<Contact />} />
+      <Route path="/Operations" element={<Operations />} />
     </Routes>
   );
 }
