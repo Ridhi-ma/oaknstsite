@@ -36,10 +36,10 @@ const Service = () => {
           comparable with the best.
         </p>
       </div>
-      <div className={classes.benefits}>
+      <div className={classes.mainbenifit}>
         <h2>Benefits</h2>
         {/* <img src="./assets/Line 5.png"></img> */}
-        <div className={classes.benifts}>
+        <div className={classes.allbenefits}>
           <Benefits
             photo={"3arrow.png"}
             head="Scalability"
@@ -114,55 +114,17 @@ const Service = () => {
             " Our security specialists build custom security integration solutions to secure your data and critical business. We provide a comprehensive security strategy to monitor and detect threats. Our deployment solutions take care of your security concerns – from data protection to risk assessment to security monitoring."
           }
         />
-        {/* <div>
-          <h1>Cloud Strategy</h1>
-          <p>
-            We partner with you to help build your cloud strategy basis your
-            needs. We start with a diagnostic assessment of your systems and
-            business requirements and then present you with a bouquet of options
-            that can help you achieve scale with the lowest upfront investment.
-          </p>
-        </div>
-        <div>
-          <h1>Cloud Migration</h1>
-          <p>
-            Our experts work with your team to implement the cloud strategy by
-            migrating – databases, applications, websites, IT processes, etc. –
-            into the cloud). Our solutions make the migration process highly
-            secure & cost-effective. We ensure you always have access to your
-            business-critical applications during the migration process.
-          </p>
-        </div>
-        <div>
-          <h1>Cloud App Development</h1>
-          <p>
-            We implement highly scalable and cost-efficient cloud application
-            solutions that ensure operational efficiency and faster product
-            development on the cloud.
-          </p>
-        </div>
-        <div>
-          <h1>Cloud Security & Risk</h1>
-          <p>
-            Our security specialists build custom security integration solutions
-            to secure your data and critical business. We provide a
-            comprehensive security strategy to monitor and detect threats. Our
-            deployment solutions take care of your security concerns – from data
-            protection to risk assessment to security monitoring.
-          </p>
-        </div> */}
       </div>
-      {/* <div className={classes.whole}>
-            <div className={classes.bottom}>
-              <h2>Who We Serve</h2>
-              <img src="/assets/Line 5.png" />
-            </div>
-            <div className={classes.bott}>
-              <Where head="Young Organizations" />
-              <Where head="Small & Mid-Size Organizations" />
-              <Where head="Family-Owned Businesses" />
-            </div>
-          </div> */}
+      <div className={classes.whole}>
+        <div className={classes.bottom}>
+          <h2>Who We Serve</h2>
+        </div>
+        <div className={classes.bott}>
+          <Where head="Young Organizations" />
+          <Where head="Small & Mid-Size Organizations" />
+          <Where head="Family-Owned Businesses" />
+        </div>
+      </div>
       <Footer />
     </React.Fragment>
   );

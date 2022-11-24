@@ -19,18 +19,28 @@
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
-  border: 1px solid blue;
-  height: 18rem;
-  width: 25rem;
+  height: 24rem;
+  max-width: 20rem;
+  margin-top: 2rem;
+  width: 100%;
+  border: 1px solid #1e3477;
+  border-radius: 10px 10px 0px 0px;
 }
 .our h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   background-color: #1e3477;
   color: #fefefe;
+  position: relative;
+  height: 5rem;
+  border-radius: 10px 10px 0px 0px;
 }
 .our p {
   margin-top: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .topcontent {
   margin-top: 5rem;
@@ -133,23 +143,23 @@
   background-image: url("/public/assets/bottompattern.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
-.bottom img {
-  width: 18rem;
-  margin-left: 36rem;
-  margin-bottom: 3rem;
+  width: 100%;
+  margin-top: 2rem;
 }
 .boxes {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .bott {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
+  margin-top: 1rem;
+  width: 100%;
   height: 8rem;
-  margin-left: 4rem;
 }
 .bottom h2 {
   font-family: "Lato";
@@ -163,12 +173,7 @@
 .where {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  width: 18rem;
-  height: 15rem;
-  margin-top: 5rem;
-  margin-left: 2rem;
-  margin-right: 7rem;
+  margin-left: 3rem;
 }
 .container {
   width: 3rem;
@@ -190,6 +195,10 @@
   color: #000000;
   margin: 2rem;
 }
+.where h4 {
+  margin-top: 0.7rem;
+  font-size: 1.5rem;
+}
 .main h2 {
   width: 1459px;
   height: 43px;
@@ -207,39 +216,14 @@
   border: 1px solid #e4842d;
   position: relative;
 }
-.benifts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 2rem;
-  font-size: 10px;
-}
-.container div {
-  display: flex;
-  flex-direction: row;
-  font-size: 1rem;
-  justify-content: space-between;
-}
-.where h4 {
-  margin-left: 4rem;
-  position: absolute;
-  width: 530px;
-  height: 38px;
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 38px;
-  color: #000000;
-}
+
 .services h1 {
   margin-top: 1rem;
   text-align: center;
 }
 .container img {
-  width: 30px;
-  padding-left: 7.5px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 .services img {
   margin-left: 35rem;
@@ -248,13 +232,19 @@
 .services h1 {
   font-size: 2.2rem;
 }
-.benefits img {
-  margin-left: 35rem;
-  margin-bottom: 2rem;
+.mainbenifit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.benefits h2 {
-  text-align: center;
-  font-size: 2rem;
+.allbenefits {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 @media only screen and (max-width: 56.25rem) {
   * {
@@ -290,22 +280,22 @@
 
     color: #fefefe;
   }
+
   .main p {
     font-size: 1.3rem;
   }
   .boxes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
   .our {
-    margin-top: 2rem;
-    width: 19rem;
-    height: 20.5rem;
+    width: 15rem;
+    height: 20rem;
   }
   .our p {
     text-align: left;
+    font-size: 1.15rem;
   }
   .our h1 {
     font-size: 1.6rem;
@@ -313,15 +303,30 @@
   .services h1 {
     font-size: 3rem;
   }
-}
-.topcontent h2 {
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 30px;
+  .where h4 {
+    margin-top: 0.7rem;
+    font-size: 1.3rem;
+  }
+  .bott {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
+    height: 8rem;
+  }
 
-  color: #fefefe;
+  .topcontent h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+
+    color: #fefefe;
+  }
 }
 @media screen and (max-width: 1000px) {
   .topcontent {
@@ -335,6 +340,14 @@
     margin-right: 4rem;
     margin-left: 2rem;
   }
+  .container {
+    width: 2rem;
+    height: 2rem;
+  }
+  .container img {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
 }
 @media screen and (max-width: 480px) {
   .top {
@@ -344,6 +357,10 @@
   .topcontent {
     margin-top: 2rem;
     width: 100%;
+  }
+  .where h4 {
+    margin-top: 0.7rem;
+    font-size: 1rem;
   }
   .topcontent h2 {
     font-family: "Lato";
@@ -368,11 +385,14 @@
     font-size: 0.9rem;
     line-height: 18px;
   }
-  .benefits h2,
   .services h1 {
     text-align: center;
     font-size: 20px;
     font-weight: 600;
     margin-top: 0.3rem;
+  }
+  .our {
+    width: 20rem;
+    height: 20rem;
   }
 } ;
