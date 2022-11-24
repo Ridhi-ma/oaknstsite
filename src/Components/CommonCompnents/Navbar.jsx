@@ -45,7 +45,9 @@ const Navbar = () => {
               <Link to="/services">
                 <div>Cloud Transformation</div>
               </Link>
-              <div>Operations Transformation</div>
+              <Link to="/Operations">
+                <div>Operations Transformation</div>
+              </Link>
               <div>Analytics</div>
             </div>
           )}

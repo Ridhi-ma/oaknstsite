@@ -87,14 +87,14 @@ const Operations = () => {
         </div>
         <div className={classes.whom}>
           <h1>Whom We Serve</h1>
-          <div className={classes.o}>
+          {/* <div className={classes.o}>
             <div className={classes.w}>
               <h3>Small & Mid-Size Organizations</h3>
             </div>
             <div className={classes.h}>
               <h3>Small & Mid-Size Organizations</h3>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <Footer />
