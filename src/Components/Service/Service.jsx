@@ -36,10 +36,10 @@ const Service = () => {
           comparable with the best.
         </p>
       </div>
-      {/* <div className={classes.mainbenifit}>
+      <div className={classes.mainbenifit}>
         <h2>Benefits</h2>
-        <img src="./assets/Line 5.png"></img>
-        <div className={classes.allbenefits}>
+        {/* <img src="./assets/Line 5.png"></img> */}
+        <div className={classes.d}>
           <Benefits
             photo={"3arrow.png"}
             head="Scalability"
@@ -84,7 +84,7 @@ const Service = () => {
             body="With our solutions, you always have access to the latest updates and versions of the software so that you don’t have to wait for long periods for the next update."
           />
         </div>
-      </div> */}
+      </div>
       <div className={classes.services}>
         <h1>Our Services</h1>
         {/* <img src="./assets/Line 5.png"></img> */}

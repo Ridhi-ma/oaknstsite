@@ -67,34 +67,38 @@ const Operations = () => {
             />
             <Compose
               photo={"Vector (8).png"}
-              head="Operations Diagnostic"
-              body="Assess current operations system with the help of Industry KPIs and data-driven process mining and analyses.
+              head="Roadmap to Future"
+              body="Develop a long-term operation structure that’s integrated with the business aspirations.
             "
             />
             <Compose
               photo={"Vector (8).png"}
-              head="Operations Diagnostic"
-              body="Assess current operations system with the help of Industry KPIs and data-driven process mining and analyses.
+              head="Process Upgrades"
+              body="Develop corporate processes across different facets – business strategy, talent, finance & IT that support an integrated operation's goal.
+
+
             "
             />
             <Compose
               photo={"Vector (8).png"}
-              head="Operations Diagnostic"
-              body="Assess current operations system with the help of Industry KPIs and data-driven process mining and analyses.
+              head="Implementation"
+              body="Plan & implement the changes with continuous support & refinements as required by the changing business scenarios
+
+
             "
             />
           </div>
         </div>
         <div className={classes.whom}>
           <h1>Whom We Serve</h1>
-          {/* <div className={classes.o}>
+          <div className={classes.v}>
             <div className={classes.w}>
               <h3>Small & Mid-Size Organizations</h3>
             </div>
             <div className={classes.h}>
               <h3>Small & Mid-Size Organizations</h3>
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
       <Footer />

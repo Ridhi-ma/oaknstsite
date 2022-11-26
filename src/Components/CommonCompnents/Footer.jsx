@@ -56,58 +56,60 @@ const Footer = () => {
   };
   return (
     <React.Fragment>
-      <div className={classes.footer}>
-        <img src="/assets/logo.png" />
-        <div className={classes.solution}>
-          <h3>Services</h3>
-          <p>Product Development</p>
-          <p>Cloud Transformation</p>
-          <p>Operations Transformation</p>
-          <p>Analytics</p>
-        </div>
-        <div className={classes.solution}>
-          <h3>Company</h3>
-          <p>About Us</p>
-          <Link to="/Contact">
-            <p>Contact</p>
-          </Link>
-          <Link to="/Privacy">
-            <p>Privacy Policy</p>
-          </Link>
-          <div>
-            <img src="/assets/linkedin.png"></img>
-            <img src="/assets/twitter.png"></img>
+      <div className={classes.wh}>
+        <div className={classes.footer}>
+          <img src="/assets/logo.png" />
+          <div className={classes.solution}>
+            <h3>Services</h3>
+            <p>Product Development</p>
+            <p>Cloud Transformation</p>
+            <p>Operations Transformation</p>
+            <p>Analytics</p>
+          </div>
+          <div className={classes.solution}>
+            <h3>Company</h3>
+            <p>About Us</p>
+            <Link to="/Contact">
+              <p>Contact</p>
+            </Link>
+            <Link to="/Privacy">
+              <p>Privacy Policy</p>
+            </Link>
+            <div>
+              <img src="/assets/linkedin.png"></img>
+              <img src="/assets/twitter.png"></img>
+            </div>
+          </div>
+          <div className={classes.what}>
+            <h4>Want to get in touch with us?</h4>
+            <form onSubmit={formHandler}>
+              <input type="text" placeholder="Name" ref={inputo} />
+              <input type="text" placeholder="Company Email" ref={emailto} />
+              {invalid && (
+                <label style={{ color: "red" }}>Enter correct email id</label>
+              )}
+              <button>Enter</button>
+            </form>
           </div>
         </div>
-        <div className={classes.what}>
-          <h4>Want to get in touch with us?</h4>
-          <form onSubmit={formHandler}>
-            <input type="text" placeholder="Name" ref={inputo} />
-            <input type="text" placeholder="Company Email" ref={emailto} />
-            {invalid && (
-              <label style={{ color: "red" }}>Enter correct email id</label>
-            )}
-            <button>Enter</button>
-          </form>
-        </div>
-      </div>
-      <div className={classes.mobile}>
-        <div>
-          <img src="/assets/home.png" onClick={homehandler} />
-          <p onClick={homehandler}>Products</p>
-        </div>
-        <div>
-          <img src="/assets/package.png" onClick={servicehandler} />
-          <p onClick={servicehandler}>Service</p>
-        </div>
-        <div>
-          <img src="/assets/news.png" />
-          <p>News</p>
-        </div>
+        <div className={classes.mobile}>
+          <div>
+            <img src="/assets/home.png" onClick={homehandler} />
+            <p onClick={homehandler}>Products</p>
+          </div>
+          <div>
+            <img src="/assets/package.png" onClick={servicehandler} />
+            <p onClick={servicehandler}>Service</p>
+          </div>
+          <div>
+            <img src="/assets/news.png" />
+            <p>News</p>
+          </div>
 
-        <div>
-          <img src="/assets/support.png" onClick={contacthandler} />
-          <p onClick={contacthandler}>Contact us</p>
+          <div>
+            <img src="/assets/support.png" onClick={contacthandler} />
+            <p onClick={contacthandler}>Contact us</p>
+          </div>
         </div>
       </div>
     </React.Fragment>

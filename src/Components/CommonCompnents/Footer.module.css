@@ -7,6 +7,7 @@
   min-height: 15.625rem;
   height: 100%;
   padding-top: 2rem;
+  margin-left: 3rem;
   /* position: fixed;
   padding: 10px 10px 0px 10px;
   bottom: 0;
@@ -15,10 +16,19 @@
   /* height: 40px;
   background: grey; */
 }
+.wh {
+  background: rgba(211, 209, 209, 0.55);
+}
+.what button {
+  margin-bottom: 1rem;
+}
 .footer img {
   width: 12rem;
   height: 3rem;
   margin-left: 3rem;
+}
+.solution p {
+  font-size: 18px;
 }
 .footer div {
   display: flex;
@@ -60,36 +70,33 @@
   padding-right: 1rem;
 }
 .what button {
-  width: 17.25rem;
+  width: 215px;
   height: 2.5rem;
   border: none;
   background: #e4842d;
   border-radius: 10px;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .what input {
-  width: 276px;
+  width: 200px;
   height: 40px;
-
   background: #fefefe;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
   border: none;
   outline: none;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 .what h4 {
   width: 17.25rem;
   height: 3.25rem;
   border-radius: 10px;
   /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-
   font-family: "Lato";
   font-style: normal;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 21px;
   line-height: 38px;
-
   color: #1f2960;
 }
 .what {
@@ -98,6 +105,8 @@
 }
 .solution h3 {
   font-family: "Lato";
+  font-size: 21px;
+  margin-bottom: 0;
 }
 .what input[type="input"]::-webkit-input-placeholder {
   margin-left: 1rem;
@@ -110,6 +119,9 @@
 }
 .mobile {
   display: none;
+}
+.what form {
+  margin-top: 0;
 }
 @media only screen and (max-width: 56.25rem) {
   * {

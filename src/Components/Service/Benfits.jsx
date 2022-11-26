@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Benfits.module.css";
 const Benefits = (props) => {
   return (
-    <div className={classes.benefits}>
+    <div className={classes.home}>
       <div className={classes.container}>
         <img src={"/assets/" + props.photo} />
       </div>

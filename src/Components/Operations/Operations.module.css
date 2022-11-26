@@ -9,7 +9,8 @@
 }
 .operations h1 {
   color: white;
-  font-size: 3rem;
+  font-size: 20;
+  font-weight: 700;
   font-family: "Lato";
   margin-top: 7rem;
   margin-left: 5rem;
@@ -20,6 +21,9 @@
   font-size: 1.5rem;
   font-family: "Lato";
   margin-left: 5rem;
+}
+.operations {
+  padding: 50 100 100 50;
 }
 .topimage {
   display: flex;
@@ -40,20 +44,21 @@
 }
 .para {
   font-family: "Lato";
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
   color: #000000;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  background-color: #fffdfd;
+  padding: 50px 100px 40px 50px;
 }
 .benefits {
   background-image: url("/public/assets/Wave\ edited\ 1.png");
-  height: 25rem;
+  height: 21rem;
 }
 .co img {
   background-color: rgb(50, 50, 147);
   border-radius: 50%;
   width: 4rem;
+  margin-bottom: 1rem;
 }
 .benefits h1 {
   font-family: "Lato";
@@ -65,9 +70,12 @@
   font-family: "Lato";
   width: 20rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 21px;
 }
-
+.content p {
+  margin-top: 0.8rem;
+  font-size: 19px;
+}
 .kahani {
   display: flex;
   flex-direction: row;
@@ -78,23 +86,33 @@
   font-family: "Lato";
   width: 20rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 21px;
+}
+.co p {
+  margin-top: 0.8rem;
+  font-size: 19px;
 }
 .con img {
   background-color: rgb(50, 50, 147);
   border-radius: 50%;
   width: 4rem;
+  margin-bottom: 1rem;
 }
 .content img {
   background-color: rgb(50, 50, 147);
   border-radius: 50%;
   width: 4rem;
+  margin-bottom: 1rem;
 }
 .con {
   font-family: "Lato";
   width: 20rem;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 21px;
+}
+.con p {
+  font-size: 19px;
+  margin-top: 0.8rem;
 }
 .service h1 {
   text-align: center;
@@ -107,6 +125,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 2rem;
+  font-size: 18px;
 }
 .bodybottom {
   font-size: 1.3rem;
@@ -126,11 +145,23 @@
   margin-top: 1rem;
   background-color: #edececc6;
 }
+.service h1 {
+  padding-top: 1.5rem;
+}
 .whom h1 {
   text-align: center;
 }
 .whom {
   background-image: url("/public/assets/unsplash_H8X-2bchJI8.png");
+}
+.bodybottom {
+  margin-left: 1rem;
+}
+.bodybottom h2 {
+  font-size: 21px;
+}
+.bodybottom p {
+  font-size: 19px;
 }
 .o {
   display: flex;
@@ -140,15 +171,47 @@
   text-align: center;
   margin-left: 30rem;
 }
+.d head {
+  font-size: 18px;
+}
+.w {
+  box-sizing: border-box;
 
-.w h3 {
+  width: 210px;
+  height: 120px;
+  left: 302px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 2.2rem;
+  border-radius: 0px 0px 2px 0px;
   background: #203880;
   color: white;
+  box-shadow: 0px 4px 4px #000000;
+  border-radius: 15px 50px;
 }
-.h h3 {
-  background-color: #203880;
+.v {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.h {
+  box-sizing: border-box;
+
+  width: 210px;
+  height: 120px;
+
+  font-size: 18px;
+  text-align: center;
+  padding-top: 2.2rem;
+  border-radius: 0px 0px 2px 0px;
+  background: #203880;
   color: white;
+  box-shadow: 0px 4px 4px #000000;
+  border-radius: 15px 50px;
+  margin-bottom: 2rem;
 }
+
 @media only screen and (max-width: 56.25rem) {
   .topimage {
     display: none;
