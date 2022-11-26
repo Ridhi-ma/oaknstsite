@@ -164,10 +164,11 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 43px;
   text-align: center;
   color: #000000;
+  text-decoration: underline orange;
 }
 .where {
   display: flex;
@@ -188,7 +189,7 @@
   font-family: "Lato";
   font-style: inherit;
   font-weight: 350;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 38px;
   text-align: center;
   color: #000000;
@@ -229,7 +230,8 @@
   margin-bottom: 2rem;
 }
 .services h1 {
-  font-size: 2.2rem;
+  font-size: 30px;
+  text-decoration: orange underline;
 }
 .mainbenifit {
   display: flex;
@@ -247,6 +249,7 @@
 }
 .mainbenifit h2 {
   font-size: 30px;
+  text-decoration: underline orange;
 }
 @media only screen and (max-width: 56.25rem) {
   * {

@@ -65,6 +65,7 @@
   text-align: center;
   margin-top: 1rem;
   font-size: 2.1rem;
+  text-decoration: underline orange;
 }
 .content {
   font-family: "Lato";
@@ -147,6 +148,7 @@
 }
 .service h1 {
   padding-top: 1.5rem;
+  text-decoration: underline orange;
 }
 .whom h1 {
   text-align: center;
@@ -211,7 +213,9 @@
   border-radius: 15px 50px;
   margin-bottom: 2rem;
 }
-
+.whom h1 {
+  text-decoration: underline orange;
+}
 @media only screen and (max-width: 56.25rem) {
   .topimage {
     display: none;

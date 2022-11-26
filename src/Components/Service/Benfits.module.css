@@ -11,5 +11,15 @@
 .container img {
   background-color: rgb(47, 47, 145);
   border-radius: 50%;
-  object-fit: contain;
+  margin-right: 1px;
+}
+.bodybottom {
+  margin-left: 1rem;
+}
+.bodybottom h2 {
+  font-size: 21px;
+}
+.bodybottom p {
+  margin-left: 1.5px;
+  font-size: 19px;
 }
