@@ -56,7 +56,7 @@ const Navbar = () => {
           <Navbutton text="Product" />
         </Link>
 
-        <Link to="/Contact">
+        <Link to="/Csr">
           <Navbutton text="CSR" />
         </Link>
 

@@ -7,6 +7,7 @@ import Blogmainpage from "./Components/Blog/Blogmainpage";
 import Privacy from "./Components/CommonCompnents/Privacy";
 import Contact from "./Components/contact/Contact";
 import Operations from "./Components/Operations/Operations";
+import Csr from "./Components/Csr/Csr";
 function App() {
   return (
     <Routes>
@@ -17,6 +18,7 @@ function App() {
       <Route path="/Privacy" element={<Privacy />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/Operations" element={<Operations />} />
+      <Route path="/Csr" element={<Csr />} />
     </Routes>
   );
 }
