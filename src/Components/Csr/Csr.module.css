@@ -1,26 +1,100 @@
 .para {
   background-image: url("/public/assets/colorful.png");
-  height: 23rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
 }
 .content {
   font-family: "Lato";
-  font-size: 20px;
   text-align: center;
   color: #000000;
   background-color: #fffdfd;
-  padding: 50px 100px 40px 50px;
+  font-family: "Lato";
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 41px;
+  text-align: center;
+  margin-top: 2rem;
+
+  color: #000000;
+}
+.maincontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.enviorment {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: justify;
+  width: 40%;
+}
+.mcontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.enviorment h2 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration-line: underline;
+
+  color: #e4842d;
+  margin-bottom: 3rem;
+}
+.enviorment p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+
+  color: #000000;
+}
+.mainmiddel {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  justify-content: space-around;
 }
 .para h1 {
   color: white;
   font-family: "Lato";
   text-align: center;
-  padding-top: 7rem;
+  width: 30%;
+  padding-top: 8rem;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 66px;
+  text-align: center;
+
+  color: #fefefe;
 }
 .box {
   height: 210px;
   width: 650px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 20rem;
 }
 .box h2 {
@@ -86,4 +160,23 @@
   font-family: "Lato";
   font-size: 21px;
   text-decoration: underline orange;
+}
+.mainimage {
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+@media screen and (max-width: 1400px) {
+  .enviorment h2 {
+    font-weight: 500;
+    font-size: 21px;
+  }
+  .enviorment p {
+    font-weight: 300;
+    font-size: 19px;
+  }
 }
