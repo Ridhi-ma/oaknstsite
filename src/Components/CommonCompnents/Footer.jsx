@@ -58,7 +58,9 @@ const Footer = () => {
     <React.Fragment>
       <div className={classes.wh}>
         <div className={classes.footer}>
-          <img src="/assets/logo.png" />
+          <div className={classes.ima}>
+            <img src="/assets/logo.png" />
+          </div>
           <div className={classes.solution}>
             <h3>Services</h3>
             <p>Product Development</p>

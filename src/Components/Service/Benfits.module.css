@@ -1,6 +1,9 @@
 .home {
   margin-top: 2rem;
   display: flex;
+  justify-content: center;
+  width: 25%;
+  height: 15rem;
   flex-direction: row;
 }
 .bodybottom {
@@ -22,4 +25,6 @@
 .bodybottom p {
   margin-left: 1.5px;
   font-size: 19px;
+}
+@media screen and (max-width: 1547px) {
 }
