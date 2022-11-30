@@ -24,14 +24,14 @@
   margin-left: 20rem;
 }
 .box h2 {
-    font-family: "Lato";
+  font-family: "Lato";
   text-decoration: underline orange;
   text-align: center;
   margin-left: 7.5rem;
   font-size: 21px;
 }
 .box p {
-    font-family: "Lato";
+  font-family: "Lato";
   font-size: 19px;
   margin-left: 9rem;
   margin-top: 1rem;
@@ -57,15 +57,17 @@
   font-size: 21px;
 }
 .bo h2 {
-    font-family: "Lato";
+  font-family: "Lato";
   font-size: 21px;
   text-decoration: underline orange;
 }
 .b p {
+  margin-top: 1rem;
   font-size: 19px;
 }
 .bo p {
-    font-family: "Lato";
+  margin-top: 1rem;
+  font-family: "Lato";
   font-size: 19px;
 }
 .j {
@@ -76,11 +78,12 @@
   margin-left: 29rem;
 }
 .j p {
-    font-family: "Lato";
+  margin-top: 1rem;
+  font-family: "Lato";
   font-size: 19px;
 }
 .j h2 {
-    font-family: "Lato"; 
+  font-family: "Lato";
   font-size: 21px;
   text-decoration: underline orange;
 }

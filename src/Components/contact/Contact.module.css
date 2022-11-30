@@ -1,10 +1,10 @@
 .head {
-  /* background-image: url("/public/assets/rear-view-businessman-talking-phone-city.png");
-  color: white; */
+  background-image: url("/public/assets/rear-view-businessman-talking-phone-city.png");
+  color: white;
   font-style: "Lato";
   height: 27rem;
   background-repeat: no-repeat;
-  /* width: 92rem; */
+  background-size: cover;
 }
 .head h1 {
   position: absolute;
@@ -13,7 +13,7 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 800;
-  font-size: 50px;
+  font-size: 40px;
   line-height: 60px;
   margin-left: 5rem;
   margin-top: 8rem;
@@ -21,7 +21,7 @@
 .head h3 {
   position: absolute;
   font-family: "Lato";
-  font-size: 40px;
+  font-size: 30px;
   line-height: 40px;
   margin-top: 12rem;
   margin-left: 5rem;
@@ -46,11 +46,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
-  margin-left: 3rem;
+  margin-left: 2rem;
+
   font-family: "Lato";
   font-style: normal;
   color: #194f7e;
+  width: 90%;
 }
 .container {
   margin: 0;
@@ -65,10 +66,10 @@
   margin-bottom: 1rem;
   margin-top: 3rem;
 }
-.data h3 {
+.data h2 {
   font-family: "Lato";
   font-style: normal;
-  font-size: 28px;
+  font-size: 21px;
   line-height: 46px;
   color: #194f7e;
 }
@@ -93,16 +94,16 @@
 
 .abox {
   /* background: #656565; */
-  /* width: 40rem; */
+  width: 80%;
   height: 73rem;
   color: hsl(0, 6%, 7%);
-  padding-left: 2rem;
+  margin-right: 0rem;
 }
 .abox h3 {
   font-family: "Lato";
   font-style: normal;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 23px;
   line-height: 50px;
   margin-top: 3rem;
 }
@@ -111,7 +112,7 @@
   font-family: "Lato";
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 19px;
   line-height: 43px;
   width: 427px;
   height: 172px;
@@ -121,15 +122,19 @@
   flex-direction: row;
 }
 .radio {
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   height: 20rem;
 }
 .radio div {
   display: flex;
+  width: 50%;
   flex-direction: row;
   margin-top: 2rem;
+  justify-content: flex-start;
+  align-items: center;
 }
 .radio input[type="radio"] {
   size: 2rem;
@@ -153,7 +158,6 @@
 }
 .right div {
   color: #194f7e;
-  margin-bottom: 2rem;
 }
 .type {
   margin-left: 2rem;
@@ -169,7 +173,7 @@
   font-size: 2rem;
 }
 .meg input[type="text"] {
-  width: 95%;
+  width: 90%;
   border-top: 0;
   border-left: 0;
   border-right: 0;
@@ -216,6 +220,16 @@
 .whole {
   height: 100%;
 }
+.type h1 {
+  font-size: 23px;
+}
+.radio h3 {
+  font-size: 19px;
+}
+.type h2 {
+  margin-top: 0px;
+  font-size: 20px;
+}
 @media only screen and (max-width: 56.25rem) {
   * {
     margin: 0;
@@ -259,7 +273,10 @@
   .li {
     margin-top: 13rem;
   }
-
+  .images div img {
+    width: 2rem;
+    height: 2rem;
+  }
   /* .meg button {
     display: flex;
     flex-direction: column;
